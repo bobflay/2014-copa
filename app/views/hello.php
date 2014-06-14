@@ -3,7 +3,10 @@
 </h1>
 <h2>Desktop users only!</h2>
 <br>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<div id ="framebox">
 <iframe SRC='http://hdembed.com/bein-sports11.php' width='600' height='450' marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling='no'></iframe>
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -13,4 +16,9 @@
   ga('create', 'UA-49045617-1', 'geenati.com');
   ga('send', 'pageview');
 
+  $("#framebox").hide();
+
+if( ! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	$("#framebox").show();
+}
 </script>
